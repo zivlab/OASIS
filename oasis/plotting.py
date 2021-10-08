@@ -6,7 +6,7 @@ def init_fig():
     plt.rc('figure', facecolor='white', dpi=90, frameon=False)
     plt.rc('font', size=30, **{'family': 'sans-serif', 'sans-serif': ['Computer Modern']})
     plt.rc('lines', lw=2)
-    plt.rc('text', usetex=True)
+    plt.rc('text', usetex=False)
     plt.rc('legend', **{'fontsize': 24, 'frameon': False, 'labelspacing': .3, 'handletextpad': .3})
     plt.rc('axes', linewidth=2)
     plt.rc('xtick.major', size=10, width=1.5)

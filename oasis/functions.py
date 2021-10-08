@@ -2,7 +2,8 @@ import numpy as np
 import scipy
 import scipy.signal
 from math import sqrt, log, exp
-from oasis import constrained_oasisAR1, oasisAR1
+#from oasis import constrained_oasisAR1, oasisAR1
+from oasis import oasisAR1
 from warnings import warn
 from scipy.optimize import minimize, curve_fit
 try:

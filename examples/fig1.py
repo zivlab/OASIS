@@ -18,9 +18,9 @@ plt.figure(figsize=(15, 2.5))
 for i, t in enumerate(trueSpikes[0, 20:-1]):
     if t:
         plt.plot([i, i], [0, 1], c=col[2])
-plt.plot([trueSpikes[0, -1], trueSpikes[0, -1]], [0, 1], c=col[2], label=r'$s$')
-plt.plot(trueC[0, 20:] / 3., c=col[0], label=r'$c$', zorder=-11)
-plt.scatter(range(435), Y[0, 20:] / 3., c=col[1], clip_on=False, label=r'$y$')
+plt.plot([trueSpikes[0, -1], trueSpikes[0, -1]], [0, 1], c=col[2], label=r'\$s\$')
+plt.plot(trueC[0, 20:] / 3., c=col[0], label=r'\$c\$', zorder=-11)
+plt.scatter(range(435), Y[0, 20:] / 3., c=col[1], clip_on=False, label=r'\$y\$')
 plt.legend(loc=(.38, .75), ncol=3)
 plt.yticks([0, 1, 2], [0, 1, 2])
 plt.xticks(*[[0, 150, 300]] * 2)
@@ -31,3 +31,5 @@ plt.xlabel('Time', labelpad=-15)
 simpleaxis(plt.gca())
 plt.tight_layout(.01)
 plt.show()
+
+input()

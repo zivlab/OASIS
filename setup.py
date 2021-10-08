@@ -18,7 +18,7 @@ with open('test_requirements.txt', 'r') as f:
     test_required = f.read().splitlines()
 
 ext_modules = [Extension("oasis.oasis_methods",
-                         sources=["oasis/oasis_methods.pyx"],
+                         sources=["oasis/oasis_methods_ar1.pyx"],
                          include_dirs=[np.get_include()],
                          language="c++")]
 
