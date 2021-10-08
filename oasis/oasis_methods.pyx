@@ -12,13 +12,11 @@ from scipy.optimize import fminbound, minimize
 from cpython cimport bool
 from libcpp.vector cimport vector
 
-ctypedef fused FLOAT:
-    np.float32_t
-    np.float_t
+ctypedef np.float_t DOUBLE
 
 cdef struct Pool:
-    FLOAT v
-    FLOAT w
+    DOUBLE v
+    DOUBLE w
     Py_ssize_t t
     Py_ssize_t l
 
